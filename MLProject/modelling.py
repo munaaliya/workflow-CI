@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score
 # karena kriteria Advanced mewajibkan manual logging
 
 df train_model(data_path: str):
-    df = pd.read_csv("preprocessing/smart_home_processed.csv")
+    df = pd.read_csv(data_path)
     
     X = df.drop("SmartHomeEfficiency", axis=1)
     y = df["SmartHomeEfficiency"]
@@ -41,12 +41,8 @@ df train_model(data_path: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--data_path",
-        type=str,
-        required=True,
-        help="Path ke dataset preprocessing"
-    )
+    parser.add_argument("--data_path",type=str,required=True,help="Path ke dataset preprocessing")
     args = parser.parse_args()
     train_model(args.data_path)
+
 
