@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/workflow-CI/workflow-CI/MLProject/mlruns/0/3b6c7767d63c41c3aa80e4c2421feb58/artifacts
+end_time: 1765890119665
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b6c7767d63c41c3aa80e4c2421feb58
+run_name: unleashed-newt-374
+run_uuid: 3b6c7767d63c41c3aa80e4c2421feb58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765890113065
+status: 3
+tags: []
+user_id: runner
