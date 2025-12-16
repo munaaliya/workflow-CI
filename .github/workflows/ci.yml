@@ -25,7 +25,7 @@ jobs:
     - name: Run MLflow Project
       run: |
         cd MLProject
-        mlflow run . -P data_path=smart_home_processed.csv
+        mlflow run .--env-manager=local -P data_path=smart_home_processed.csv
 
     - name: Build Docker Image
       run: |
